@@ -1,4 +1,4 @@
-FROM albluca/rromadock_base
+FROM albluca/rbase
 LABEL maintainer="Luca Albergante <luca.albergante@gmail.com>"
 
 # Install libraries needed by the packages
