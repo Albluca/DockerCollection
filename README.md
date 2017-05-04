@@ -5,14 +5,16 @@ Description
 ===========
 
 This repository contains multiple descriptions of different
-interdependent dockers: \* `albluca/rbase` is based on
-`rocker/rstudio`and contains all the packages needed to install
-[rRoma](https://github.com/Albluca/rRoma) and
-[rRomaDash](https://github.com/Albluca/rRomaDash) \* albluca/rroma is
-based on `albluca/rbase` and contains fully functional
-[rRoma](https://github.com/Albluca/rRoma),
-[rRomaDash](https://github.com/Albluca/rRomaDash), and
-[RNaviCell](sysbio-curie/RNaviCell)
+interdependent dockers:
+
+-   `albluca/rbase` is based on `rocker/rstudio`and contains all the
+    packages needed to install [rRoma](https://github.com/Albluca/rRoma)
+    and [rRomaDash](https://github.com/Albluca/rRomaDash)
+
+-   albluca/rroma is based on `albluca/rbase` and contains fully
+    functional [rRoma](https://github.com/Albluca/rRoma),
+    [rRomaDash](https://github.com/Albluca/rRomaDash), and
+    [RNaviCell](sysbio-curie/RNaviCell)
 
 Usage
 =====
