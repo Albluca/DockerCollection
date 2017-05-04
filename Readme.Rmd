@@ -1,0 +1,11 @@
+---
+title: 'rROMA Docker image'
+author: '[Luca Albergante](mailto:luca.albergante@gmail.com)'
+date: 'May 2017'
+output:
+  md_document:
+    toc: yes
+    toc_depth: 2
+---
+
+This repository contains multiple the description of different interdependent dockers. See the readme of the [rRoma package](https://github.com/Albluca/rRoma) for further details.
