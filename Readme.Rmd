@@ -27,7 +27,7 @@ docker pull albluca/rroma
 After installation, the image can be started with the command
 
 ```{r, engine='bash', eval=FALSE}
-docker run -p 8787:8787 albluca/rromadock
+docker run -p 8787:8787 albluca/rroma
 ```
 
 At this point, the RStudio web interface containing rRoma will be availabe, in Unix-like systems, at the address [http://localhost:8787](http://localhost:8787). It is then possible to access the interface by using "rstudio" as the username and password.
