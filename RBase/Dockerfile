@@ -5,7 +5,7 @@ LABEL maintainer="Luca Albergante <luca.albergante@gmail.com>"
 # scater needs XML, which needs libxml2-dev and need to be installed separatedly
 RUN apt-get update
 RUN apt-get install libxml2-dev
-RUN R -e " \
-source('https://bioconductor.org/biocLite.R'); \
-biocLite('scater'); \
-install.packages(c('devtools', 'scater', 'irlba', 'ggplot2', 'gridExtra', 'pheatmap', 'reshape', 'shiny', 'R.utils', 'readr', 'ggsignif', 'colorRamps', 'shiny', 'plotly', 'Rtsne', 'mice', 'codetools', 'RJSONIO', 'gridExtra'), repos = 'http://cran.us.r-project.org')"
+
+RUN R -e " source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
+RUN R -e " install.packages(c('devtools', 'irlba', 'reshape', 'R.utils', 'readr', 'mice', 'codetools', 'RJSONIO', 'Rtsne'), repos = 'http://cran.us.r-project.org')"
+RUN R -e " install.packages(c('ggplot2', 'gridExtra', 'pheatmap', 'shiny',  'ggsignif', 'colorRamps', 'plotly'), repos = 'http://cran.us.r-project.org')"
