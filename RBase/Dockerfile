@@ -1,0 +1,11 @@
+FROM rocker/rstudio
+LABEL maintainer="Luca Albergante <luca.albergante@gmail.com>"
+
+# Install libraries needed by the rRoma package family
+# scater needs XML, which needs libxml2-dev and need to be installed separatedly
+RUN apt-get update
+RUN apt-get install libxml2-dev
+RUN R -e " \
+source('https://bioconductor.org/biocLite.R'); \
+biocLite('scater'); \
+install.packages(c('devtools', 'scater', 'irlba', 'ggplot2', 'gridExtra', 'pheatmap', 'reshape', 'shiny', 'R.utils', 'readr', 'ggsignif', 'colorRamps', 'shiny', 'plotly', 'Rtsne', 'mice', 'codetools', 'RJSONIO', 'gridExtra'), repos = 'http://cran.us.r-project.org')"
