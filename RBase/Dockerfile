@@ -8,4 +8,5 @@ RUN apt-get install libxml2-dev
 
 RUN R -e " source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 RUN R -e " install.packages(c('devtools', 'irlba', 'reshape', 'R.utils', 'readr', 'mice', 'codetools', 'RJSONIO', 'Rtsne'), repos = 'http://cran.us.r-project.org')"
-RUN R -e " install.packages(c('ggplot2', 'gridExtra', 'pheatmap', 'shiny',  'ggsignif', 'colorRamps', 'plotly'), repos = 'http://cran.us.r-project.org')"
+RUN R -e " install.packages(c('ggplot2', 'gridExtra', 'pheatmap',  'ggsignif', 'colorRamps', 'plotly'), repos = 'http://cran.us.r-project.org')"
+RUN R -e " install.packages(c('shiny', 'shinyFiles'), repos = 'http://cran.us.r-project.org')"
