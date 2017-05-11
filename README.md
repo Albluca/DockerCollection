@@ -7,14 +7,21 @@ Description
 This repository contains multiple descriptions of different
 interdependent dockers:
 
--   `albluca/rbase` is based on `rocker/rstudio`and contains all the
-    packages needed to install [rRoma](https://github.com/Albluca/rRoma)
-    and [rRomaDash](https://github.com/Albluca/rRomaDash)
+-   `sysbiocurie/rBase` is based on `rocker/rstudio`and contains all the
+    packages needed to run
+    [rRoma](https://github.com/sysbio-curie/rRoma) and
+    [rRomaDash](https://github.com/sysbio-curie/rRomaDash)
 
--   albluca/rroma is based on `albluca/rbase` and contains fully
-    functional [rRoma](https://github.com/Albluca/rRoma),
-    [rRomaDash](https://github.com/Albluca/rRomaDash), and
-    [RNaviCell](sysbio-curie/RNaviCell)
+-   `sysbiocurie/rRoma` is based on `sysbiocurie/rBase` and contains the
+    stable version of [rRoma](https://github.com/sysbio-curie/rRoma),
+    [rRomaDash](https://github.com/sysbio-curie/rRomaDash), and
+    [RNaviCell](https://github.com/sysbio-curie/RNaviCell)
+
+-   `sysbiocurie/rRomaDevel` is based on `sysbiocurie/rbase` and
+    contains the developer version of
+    [rRoma](https://github.com/Albluca/rRoma),
+    [rRomaDash](https://github.com/Albluca/rRomaDash), and the stable
+    version of [RNaviCell](https://github.com/sysbio-curie/RNaviCell)
 
 Usage
 =====
@@ -22,11 +29,11 @@ Usage
 To use the rRoma docker image, it is necessary, after installing
 [Docker](https://www.docker.com), to run the following command:
 
-    docker pull albluca/rroma
+    docker pull sysbiocurie/rroma
 
 After installation, the image can be started with the command
 
-    docker run -p 8787:8787 albluca/rroma
+    docker run -p 8787:8787 sysbiocurie/rroma
 
 At this point, the RStudio web interface containing rRoma will be
 availabe, in Unix-like systems, at the address <http://localhost:8787>.
