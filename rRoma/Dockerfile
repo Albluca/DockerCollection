@@ -1,4 +1,4 @@
-FROM albluca/rbase
+FROM sysbiocurie/rbase
 LABEL maintainer="Luca Albergante <luca.albergante@gmail.com>"
 
 # Install ggsignif from my local directory. This is only a temporary fix
